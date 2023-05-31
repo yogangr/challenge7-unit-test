@@ -414,45 +414,5 @@ describe("AuthenticationController", () => {
       expect(mockResponse.status).toHaveBeenCalledWith(200);
       expect(mockResponse.json).toHaveBeenCalledWith(mockUser);
     });
-
-    // it(
-    //   "should res.status(404) with RecordNotFoundError " + "if user not found.",
-    //   async () => {
-    //     const mockUser = {
-    //       id: 2,
-    //       name: "Alvin",
-    //       email: "alvin@binar.co.id",
-    //       encryptedPassword: "$2jakdbqudqiuy7981y9ge9g1dnqdiq9112g.dkah",
-    //       roleId: 1,
-    //     };
-    //     const mockReq = {
-    //       user: mockUser,
-    //     };
-    //     const mockRes = {
-    //       status: jest.fn().mockReturnThis(),
-    //       json: jest.fn().mockReturnThis(),
-    //     };
-
-    //     const mockUserModel = {
-    //       findByPk: jest.fn().mockReturnValue(false),
-    //     };
-    //     const mockRoleModel = {
-    //       findByPk: jest.fn().mockReturnValue(false),
-    //     };
-
-    //     const controller = new AuthenticationController({
-    //       userModel: mockUserModel,
-    //       roleModel: mockRoleModel,
-    //       bcrypt,
-    //       jwt,
-    //     });
-
-    //     await controller.handleGetUser(mockReq, mockRes);
-    //     const err = new RecordNotFoundError(mockUser.name);
-
-    //     expect(mockRes.status).toHaveBeenCalledWith(404);
-    //     expect(mockRes.json).toHaveBeenCalledWith(err);
-    //   }
-    // );
   });
 });
