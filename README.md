@@ -29,8 +29,8 @@ npm run test
 
 ## Unit testing
 
-![Alt text](unit-test.jpg "a title")
+![Alt text](docs/unit-test.jpg "a title")
 
 ## Deploy netlify
 
-[https://yoga-unit-test-jest.netlify.app/](https://yoga-unit-test-jest.netlify.app/)
+[https://yngr-unit-test-jest.netlify.app/](https://yngr-unit-test-jest.netlify.app/)
